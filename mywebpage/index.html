@@ -1,0 +1,127 @@
+<!doctype html>
+
+<!-- так в HTML обозначаются комментарии. Выше вы видите объявление типа документа (DOCTYPE), так браузер понимает, что код ниже нужно интерпретировать как html -->
+
+<html>
+
+<!-- зона заголовка html, тег <title> - строка, которую браузер отображает на вкладках над страницами, <meta> и <link> сообщают технические сведения для браузера, например, что файл имеет кодировку Юникод (utf-8) -->
+
+	<head>
+	
+		<title>Личная страница Бахвалова Дмитрия</title>
+	 	<!-- Required meta tags -->
+	 	<meta charset="utf-8">
+	 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<meta name="description" content="Личная страница и контакты">
+
+		<!-- Bootstrap Core CSS -->
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<!-- Эта страница сделана с помощью bootstrap - популярной библиотеки для создания и настройки сайтов. Ниже вы увидите, что многие теги содержат атрибуты class - bootstrap содержит шаблоны, как такие элементы красиво оформить -->
+
+	</head>
+	
+	<!-- body - главная, содержательная часть страницы. Контент на этой странице делится на меню (nav), "шапку" (header), "подвал" (footer) и все остальное (мы заключили остаток в тег section) -->	
+	<body>
+<!-- меню (navigation bar) -->
+<font face="courier new" >
+
+		<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom" style="background-color:#1b212c; border-bottom-color:#1b212c"
+		
+<!-- div - это контейнеры - коробочки с текстом и/или графикой, которые можно вкладывать друг в друга. Пристально смотреть на теги в этой части кода не нужно -->
+			<div class="container"> 
+				<div class="navbar-header"> 
+				
+					<a href="https://ling.hse.ru/" class="navbar-brand"style="color:#d9e2e1">Школа лингвистики НИУ ВШЭ</a> 
+				</div> 
+				<nav class="collapse navbar-collapse" id="bs-navbar"> 
+					<ul class="nav navbar-nav navbar-right"> 
+						<li> <a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2021/index.html"style="color:#d9e2e1">Страница курса</a> </li> 
+						<li> <a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2021/latin_2.html"style="color:#d9e2e1">Страница группы</a> </li> 
+<!-- поправьте номер группы в URL, если нужно (от 1 до 4) -->
+					</ul>
+				</nav> 
+			</div>
+		</nav>
+
+<!-- начинается шапка. у тега header есть атрибут style, который задает цвет фона и отступы. поменяйте значения атрибутов и посмотрите, как изменится страница -->
+
+		<header style="background-color:#bdbec3; padding-top:70px; "> 
+			<div class="container"> 
+				<div class="row">
+					<div class="col-md-4">
+				
+						<br><br>
+<!-- здесь и дальше нужно поменять весь содержательный текст, чтобы получилась ваша личная страница -->
+						<h1><b>Дима Бахвалов</b></h1>
+						<hr style="border-color:#292929;" "border: 2px solid blue;"> <!-- это горизонтальная линия -->
+						<p> Учу играть на гитаре. <i> Недорого.</i></p> 
+						<p> P.S. Оцените медиатор со Стичем !!</p>
+					</div>
+					<div class="col-md-4">
+<!-- img - тег для вставки изображений. Мы использовали атрибут style, чтобы задать размер изображения и ширину рамки-->
+<!-- Измените URL на URL вашей фотографии, а также настройте размер изображения -->
+<img src="https://sun9-73.userapi.com/impg/TEV8iVYfU8tAkyEu0KWemM8r3W7wm5jXf_ImfA/M7YVuZpSUn4.jpg?size=1280x853&quality=96&sign=c53d590c7bbd5ba2f88e087bfeb4697c&type=album" style="height:480px; margin:-20px 20px 0px 20px; "  >
+					</div>
+				</div>
+			</div>
+		</header>
+<font color="#d9e2e1">
+<!-- часть страницы, которая под шапкой -->
+		<section id="portfolio" style="background-color:#1b212c;">
+			<div class="container">
+
+<!-- атрибут col-md-... говорит, что контент будет разделен на несколько столбцов, их ширина соотносится как 3 - 6 - 3 (Bootstrap использует воображаемую сетку из 12 равных по ширине колонок) -->
+				<div class="col-md-3">
+				
+
+<!-- <article> не влияет на оформление, но помогает структурировать контент на осмысленые разделы -->
+					<article>
+						<h3>Место учебы</h2>
+						<p>Фундаментальная и прикладная лингвистика, НИУ ВШЭ, Москва</p>
+					</article>
+					<article>
+						<h3>Родной город</h2>
+						<p> Вологда</p>
+					</article>
+					<article>
+						<h3>Школа</h2>
+<!-- когда будете менять текст, не используйте бюрократических слов типа ГБОУ СОШ, ну пожаалуйста -->
+						<p> <a href="https://vml35.ru/" style="color:#d9e2e1">"Вологодский Многопрофильный Лицей"</a></p>
+					</article>
+				</div>
+
+				<div class="col-md-5">
+					<article>
+						<h3>Немного о себе</h2>
+						<p>Привет! Как уже можно было догадаться, меня зовут Дима.<br>
+						Больше всего я люблю <i>играть на гитаре</i> и в <i>волейбол</i>. Наверное, еще люблю лингвистику.<br>
+						Не люблю велосипеды и яблоки <br>
+						Если интересует первая часть моих интересов, можете заглянуть на <a href="https://free.mychords.net/user/862617/"style="color:#d9e2e1"><b>мою страничку</b></a> на сайте mychords.net. Мой подбор песни <a href="https://free.mychords.net/zoloto/121251-zoloto-ulicy-zhdali.html" style="color:#d9e2e1">"Улицы ждали"</a> набрал уже более 120 тысяч просмотров) 
+						много <br>
+						Если интересует вторая часть, скоро (очень надеюсь на это) меня можно будет найти <a href="https://sport.hse.ru/news/tags/sport/"style="color:#d9e2e1"><b>тут</b></a> 
+						</p>
+					</article>
+				</div>
+
+				<div class="col-md-4">
+					<h3>Подписывайтесь на меня</h3>
+<!-- тег <ul> - unordered list. Еще бывает тег <ol> -->
+					<ul>
+						<p> <a href="https://vk.com/dima_bakhwalov" style="color:#d9e2e1"> В Вконтакте</a> </p>
+						<p> <a href="https://www.instagram.com/dmbhvlv/" style="color:#d9e2e1">В Instagram'е</a> </p>
+					</ul>
+				</div>
+			</div>
+
+		</section>
+
+<!-- это подвал. В этой части страницы обычно ставят копирайт (с помощью символа &copy;) и пишут об истории создания страницы. Поставьте свой копирайт -->
+		<footer class="bs-docs-footer" style="background-color:#1b212cd4"> 
+			<div class="container"> 
+				<p style="text-align:right;">&copy; Бахвалов Д. В., 2021</p> 
+			</div>
+		</footer>
+		</font color>
+	</body>
+</html>
